@@ -6,7 +6,7 @@
 
 <?php
 ini_set('display_errors', 1);
-echo "Hello Cloud computing class 0818!";
+echo "Hello, this is ATN toy shop";
 ?>
 
 <?php
@@ -43,8 +43,8 @@ echo '<p>Students information:</p>';
 <table class="table table-bordered table-condensed">
     <thead>
       <tr>
-        <th>Student ID</th>
-        <th>Name</th>
+        <th>Toy ID</th>
+        <th>Toy Name</th>
 
 
       </tr>
