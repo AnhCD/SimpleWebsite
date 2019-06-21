@@ -5,7 +5,7 @@
 <h1>INSERT DATA TO DATABASE</h1>
 
 <?php
-ini_set('display_errors', 1);
+
 echo "Insert database!";
 ?>
 <ul>
