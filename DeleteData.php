@@ -34,13 +34,12 @@ if (empty(getenv("DATABASE_URL"))){
 
 $sql = "DELETE FROM toy WHERE toyid = '$_POST[toyid]'";
 $stmt = $pdo->prepare($sql);
-if (filter_has_var(INPUT_POST, 'submit'))
-{
+
+
 if($stmt->execute() == TRUE){
     echo "Record deleted successfully.";
 } else {
     echo "Error deleting record: ";
-}
 }
 ?>
 </body>
