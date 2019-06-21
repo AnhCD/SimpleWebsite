@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
     <head>
 <title>Insert data to PostgreSQL with php - creating a simple web application</title>
@@ -14,11 +14,10 @@ list-style: none;
 <h2>Enter data into student table</h2>
 <ul>
     <form name="InsertData" action="InsertData.php" method="POST" >
-<li>Student ID:</li><li><input type="text" name="StudentID" /></li>
-<li>Full Name:</li><li><input type="text" name="fname" /></li>
-<li>Email:</li><li><input type="text" name="email" /></li>
-<li>Class:</li><li><input type="text" name="classname" /></li>
-<li><input type="submit" /></li>
+<li>toyID:</li><li><input type="text" name="StudentID" /></li>
+<li>Toy Name:</li><li><input type="text" name="fname" /></li>
+
+
 </form>
 </ul>
 
@@ -31,7 +30,8 @@ if (empty(getenv("DATABASE_URL"))){
      
    $db = parse_url(getenv("DATABASE_URL"));
    $pdo = new PDO("pgsql:" . sprintf(
-        "host=ec2-174-129-240-67.compute-1.amazonaws.com;port=5432;user=wrflrxtavasvqh;password=fbfef36049fbd28f1200e3a775a389e014838e86522765e67782f9cf7a3f516b;dbname=d3mmhribgmc6bf",
+        "host=ec2-54-225-72-238.compute-1.amazonaws.com
+;port=5432;user=zyspzjwbrlxfnk;password=95402f2fcd09500f7ad877a328cb24cb0ac00800666b42159462534ac9619b11;dbname=zyspzjwbrlxfnk",
         $db["host"],
         $db["port"],
         $db["user"],
@@ -49,16 +49,15 @@ if($pdo === false){
 
 //$stmt->bindParam(':id','SV03');
 //$stmt->bindParam(':name','Ho Hong Linh');
-//$stmt->bindParam(':email', 'Linhhh@fpt.edu.vn');
-//$stmt->bindParam(':class', 'GCD018');
+
 //$stmt->execute();
-//$sql = "INSERT INTO student(stuid, fname, email, classname) VALUES('SV02', 'Hong Thanh','thanhh@fpt.edu.vn','GCD018')";
+//$sql = "INSERT INTO student(toyid, toyname) VALUES('SV02', 'robot')";
 $sql = "INSERT INTO student(stuid, fname, email, classname)"
-        . " VALUES('$_POST[StudentID]','$_POST[fname]','$_POST[email]','$_POST[classname]')";
+        . " VALUES('$_POST[toyid]','$_POST[toyname]')";
 $stmt = $pdo->prepare($sql);
 //$stmt->execute();
- if (is_null($_POST[StudentID])) {
-   echo "StudentID must be not null";
+ if (is_null($_POST[toyid])) {
+   echo "toyid must be not null";
  }
  else
  {
