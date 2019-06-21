@@ -5,10 +5,17 @@
 <h1>INSERT DATA TO DATABASE</h1>
 
 <?php
-ini_set('display_errors', 1);
+
 echo "Update database!";
 ?>
+<ul>
+    <form name="UpdateData" action="UpdateData.php" method="POST" >
+<li>toyID:</li><li><input type="text" name="toyid" /></li>
+<li>Toy Name:</li><li><input type="text" name="toyname" /></li>
 
+<li><input type="submit" /></li>
+</form>
+</ul>
 <?php
 
 
@@ -19,7 +26,8 @@ if (empty(getenv("DATABASE_URL"))){
      
    $db = parse_url(getenv("DATABASE_URL"));
    $pdo = new PDO("pgsql:" . sprintf(
-        "host=ec2-174-129-240-67.compute-1.amazonaws.com;port=5432;user=wrflrxtavasvqh;password=fbfef36049fbd28f1200e3a775a389e014838e86522765e67782f9cf7a3f516b;dbname=d3mmhribgmc6bf",
+        "host=ec2-54-225-72-238.compute-1.amazonaws.com;port=5432;user=zyspzjwbrlxfnk;password=95402f2fcd09500f7ad877a328cb24cb0ac00800666b42159462534ac9619b11
+        ;dbname=d7f8iof0djq8lo",
         $db["host"],
         $db["port"],
         $db["user"],
@@ -41,7 +49,7 @@ if (empty(getenv("DATABASE_URL"))){
 
         // return the number of row affected
         //return $stmt->rowCount();
-$sql = "UPDATE student SET fname = 'Lee Chan Do' WHERE stuid = 'SV02'";
+$sql = "UPDATE toy SET  toyname = '$_POST[toyname]' WHERE toyid = '$_POST[toyid]'";
       $stmt = $pdo->prepare($sql);
 if($stmt->execute() == TRUE){
     echo "Record updated successfully.";
