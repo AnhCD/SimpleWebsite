@@ -11,7 +11,7 @@ echo "Insert database!";
 <ul>
     <form name="DeleteData" action="DeleteData.php" method="POST" >
 <li>toyID:</li><li><input type="text" name="toyid" /></li>
-<li><input type="submit" />delete</li>
+<li><button type="submit" value="Submit">Delete</button></li>
 <?php
 
 
@@ -34,12 +34,14 @@ if (empty(getenv("DATABASE_URL"))){
 
 $sql = "DELETE FROM toy WHERE toyid = '$_POST[toyid]'";
 $stmt = $pdo->prepare($sql);
+if (filter_has_var(INPUT_POST, 'submit'))
+{
 if($stmt->execute() == TRUE){
     echo "Record deleted successfully.";
 } else {
     echo "Error deleting record: ";
 }
-
+}
 ?>
 </body>
 </html>
