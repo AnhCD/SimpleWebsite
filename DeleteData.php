@@ -9,9 +9,9 @@ ini_set('display_errors', 1);
 echo "Insert database!";
 ?>
 <ul>
-    <form name="InsertData" action="InsertData.php" method="POST" >
+    <form name="DeleteData" action="DeleteData.php" method="POST" >
 <li>toyID:</li><li><input type="text" name="toyid" /></li>
-<li>Toy Name:</li><li><input type="text" name="toyname" /></li>
+<li><input type="submit" />delete</li>
 <?php
 
 
