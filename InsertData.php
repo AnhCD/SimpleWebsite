@@ -14,8 +14,8 @@ list-style: none;
 <h2>Enter data into student table</h2>
 <ul>
     <form name="InsertData" action="InsertData.php" method="POST" >
-<li>toyID:</li><li><input type="text" name="StudentID" /></li>
-<li>Toy Name:</li><li><input type="text" name="fname" /></li>
+<li>toyID:</li><li><input type="text" name="toyid" /></li>
+<li>Toy Name:</li><li><input type="text" name="toyname" /></li>
 
 <li><input type="submit" /></li>
 </form>
