@@ -52,7 +52,7 @@ if($pdo === false){
 
 //$stmt->execute();
 //$sql = "INSERT INTO student(toyid, toyname) VALUES('SV02', 'robot')";
-$sql = "INSERT INTO student(stuid, fname, email, classname)"
+$sql = "INSERT INTO toy(toyid, toyname)"
         . " VALUES('$_POST[toyid]','$_POST[toyname]')";
 $stmt = $pdo->prepare($sql);
 //$stmt->execute();
