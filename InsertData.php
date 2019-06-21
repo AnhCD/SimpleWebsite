@@ -17,7 +17,7 @@ list-style: none;
 <li>toyID:</li><li><input type="text" name="StudentID" /></li>
 <li>Toy Name:</li><li><input type="text" name="fname" /></li>
 
-
+<li><input type="submit" /></li>
 </form>
 </ul>
 
