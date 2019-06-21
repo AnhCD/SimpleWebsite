@@ -37,10 +37,9 @@ $stmt = $pdo->prepare($sql);
 
 
 if($stmt->execute() == TRUE){
-    echo "Record deleted successfully.";
-} else {
-    echo "Error deleting record: ";
-}
+    echo "Record deleted successfully.";}
+else {
+    echo "Error deleting record: ";}
 ?>
 </body>
 </html>
