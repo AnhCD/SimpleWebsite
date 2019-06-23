@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 * {box-sizing: border-box}
-.mySlides1, .mySlides2 {display: none}
+
 img {vertical-align: middle;}
 
 /* Slideshow container */
@@ -31,7 +31,8 @@ img {vertical-align: middle;}
 </div>
 
 <!-- Slide Show-->
-<section>
+<div class="slideshow-container">
+  <div>
   <img class="mySlides" src="https://rukminim1.flixcart.com/image/612/612/jmi22kw0/puzzle/d/h/f/1-high-speed-stickerless-3x3-magic-rubik-cube-puzzle-game-toy-original-imaf8g4zyghejjkc.jpeg?q=70"
   style="width:40%">
   <img class="mySlides" src="https://images-na.ssl-images-amazon.com/images/I/71MyeaKySwL._SX425_.jpg"
@@ -40,7 +41,8 @@ img {vertical-align: middle;}
   style="width:40%">
   <img class="mySlides" src="https://media.4rgos.it/i/Argos/1085873_R_Z001A?w=750&h=440&qlt=70"
   style="width:40%">
-</section>
+  </div>
+</div>
 <script>
 // Automatic Slideshow - change image every 3 seconds
 var myIndex = 0;
