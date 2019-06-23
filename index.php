@@ -13,13 +13,13 @@
 
 <!-- Slide Show-->
 <section>
-  <img class="mySlides" src="rubik_cube.jpeg"
+  <img class="mySlides" src="https://rukminim1.flixcart.com/image/612/612/jmi22kw0/puzzle/d/h/f/1-high-speed-stickerless-3x3-magic-rubik-cube-puzzle-game-toy-original-imaf8g4zyghejjkc.jpeg?q=70"
   style="width:100%">
-  <img class="mySlides" src="red_car.jpg"
+  <img class="mySlides" src="https://images-na.ssl-images-amazon.com/images/I/71MyeaKySwL._SX425_.jpg"
   style="width:100%">
   <img class="mySlides" src="https://media.wired.com/photos/5954a0cb8e8cc150fa8ec6e7/master/w_1800,c_limit/HighRes_LEGO_DUPLO_bricks-story.jpg"
   style="width:100%">
-  <img class="mySlides" src="figue.jpg"
+  <img class="mySlides" src="https://media.4rgos.it/i/Argos/1085873_R_Z001A?w=750&h=440&qlt=70"
   style="width:100%">
 </section>
 <script>
