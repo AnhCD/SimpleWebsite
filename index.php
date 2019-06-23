@@ -4,10 +4,10 @@
 <link rel="stylesheet" href="/w3css/3/w3.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 <nav class="w3-bar w3-black">
-  <a href="#home" class="w3-button w3-bar-item">Home</a>
-  <a href="#band" class="w3-button w3-bar-item">Band</a>
-  <a href="#tour" class="w3-button w3-bar-item">Tour</a>
-  <a href="#contact" class="w3-button w3-bar-item">Contact</a>
+  <a href="ConnectToDB.php" class="w3-button w3-bar-item">View</a>
+  <a href="InsertData.php" class="w3-button w3-bar-item">Insert</a>
+  <a href="UpdateData.php" class="w3-button w3-bar-item">Update</a>
+  <a href="DeleteData.php" class="w3-button w3-bar-item">Delete</a>
 </nav>
      <a href="ConnectToDB.php" target="_blank" >Connect database</a>
      <br/>
