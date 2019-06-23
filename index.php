@@ -1,15 +1,22 @@
+<!DOCTYPE html>
 <html>
+<title>HOME PAGE</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="/w3css/3/w3.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <body>
-<nav class="w3-bar w3-black">
-  <a href="#ConnectToDB.php" class="w3-button w3-bar-item">View</a>
-  <a href="#InsertData.php" class="w3-button w3-bar-item">Insert</a>
-  <a href="#UpdateData.php" class="w3-button w3-bar-item">Update</a>
-  <a href="#DeleteData.php" class="w3-button w3-bar-item">Delete</a>
-</nav>
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Logo</a>
+  <a href="ConnectToDB.php" target="_blank" ><button class="w3-bar-item w3-button w3-hide-small w3-hover-white" type="submit">View database</button></a>
+  <a href="InsertData.php" target="_blank" ><button class="w3-bar-item w3-button w3-hide-small w3-hover-white" type="submit">Insert data to the database</button></a>
+  <a href="UpdateData.php" target="_blank" ><button class="w3-bar-item w3-button w3-hide-small w3-hover-white" type="submit">Update data to the database</button></a> 
+  <a href="DeleteData.php" target="_blank" ><button class="w3-bar-item w3-button w3-hide-small w3-hover-white" type="submit">Delete data to the database</button></a> 
+</div>
 
 <!-- Slide Show-->
 <section>
