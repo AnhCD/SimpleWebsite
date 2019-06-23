@@ -5,10 +5,10 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 <body>
 <nav class="w3-bar w3-black">
-  <a href="ConnectToDB.php" class="w3-button w3-bar-item">View</a>
-  <a href="InsertData.php" class="w3-button w3-bar-item">Insert</a>
-  <a href="UpdateData.php" class="w3-button w3-bar-item">Update</a>
-  <a href="DeleteData.php" class="w3-button w3-bar-item">Delete</a>
+  <a href="#ConnectToDB.php" class="w3-button w3-bar-item">View</a>
+  <a href="#InsertData.php" class="w3-button w3-bar-item">Insert</a>
+  <a href="#UpdateData.php" class="w3-button w3-bar-item">Update</a>
+  <a href="#DeleteData.php" class="w3-button w3-bar-item">Delete</a>
 </nav>
 
 <!-- Slide Show-->
