@@ -53,12 +53,12 @@ img {vertical-align: middle;}
 <body>
 <!-- Navbar -->
 <div class="navbar">
-  
-  <a href="#" class="active"><i class="fa fa-home w3-margin-right"></i>Shop</a>
-  <a href="ConnectToDB.php" target="_blank" ><button class="w3-bar-item w3-button w3-hide-small w3-hover-white" type="submit">View database</button></a>
-  <a href="InsertData.php" target="_blank" ><button class="w3-bar-item w3-button w3-hide-small w3-hover-white" type="submit">Insert data to the database</button></a>
-  <a href="UpdateData.php" target="_blank" ><button class="w3-bar-item w3-button w3-hide-small w3-hover-white" type="submit">Update data to the database</button></a> 
-  <a href="DeleteData.php" target="_blank" ><button class="w3-bar-item w3-button w3-hide-small w3-hover-white" type="submit">Delete data to the database</button></a> 
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="#" class="active">Shop</a>
+  <a href="ConnectToDB.php" target="_blank" ><button type="submit">View database</button></a>
+  <a href="InsertData.php" target="_blank" ><button type="submit">Insert data to the database</button></a>
+  <a href="UpdateData.php" target="_blank" ><button type="submit">Update data to the database</button></a> 
+  <a href="DeleteData.php" target="_blank" ><button type="submit">Delete data to the database</button></a> 
 </div>
 
 <!-- Slide Show-->
