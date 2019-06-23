@@ -17,7 +17,7 @@
   style="width:100%">
   <img class="mySlides" src="red_car.jpg"
   style="width:100%">
-  <img class="mySlides" src="Lego.jpg"
+  <img class="mySlides" src="https://media.wired.com/photos/5954a0cb8e8cc150fa8ec6e7/master/w_1800,c_limit/HighRes_LEGO_DUPLO_bricks-story.jpg"
   style="width:100%">
   <img class="mySlides" src="figue.jpg"
   style="width:100%">
