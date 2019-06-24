@@ -6,6 +6,8 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="image/w3.css">
 <style>
 * {box-sizing: border-box}
 
@@ -50,47 +52,28 @@ img {vertical-align: middle;}
   }
 }
 </style>
-<body>
-<!-- Navbar -->
-<div class="navbar">
-  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-  
-  <a href="ConnectToDB.php"><button class="w3-bar-item w3-button w3-hide-small w3-hover-white" type="submit">View database</button></a>
-  <a href="InsertData.php"><button class="w3-bar-item w3-button w3-hide-small w3-hover-white" type="submit">Insert data to the database</button></a>
-  <a href="UpdateData.php"><button class="w3-bar-item w3-button w3-hide-small w3-hover-white" type="submit">Update data to the database</button></a> 
-  <a href="DeleteData.php"><button class="w3-bar-item w3-button w3-hide-small w3-hover-white" type="submit">Delete data to the database</button></a> 
-</div>
+</head><body>
 
-<!-- Slide Show-->
-<div class="slideshow-container">
-  <div>
-  <img class="mySlides" src="https://rukminim1.flixcart.com/image/612/612/jmi22kw0/puzzle/d/h/f/1-high-speed-stickerless-3x3-magic-rubik-cube-puzzle-game-toy-original-imaf8g4zyghejjkc.jpeg?q=70"
-  style="width:1400px;height:600px;">
-  <img class="mySlides" src="https://images-na.ssl-images-amazon.com/images/I/71MyeaKySwL._SX425_.jpg"
-  style="width:1400px;height:600px;">
-  <img class="mySlides" src="https://media.wired.com/photos/5954a0cb8e8cc150fa8ec6e7/master/w_1800,c_limit/HighRes_LEGO_DUPLO_bricks-story.jpg"
-  style="width:1400px;height:600px;">
-  <img class="mySlides" src="https://media.4rgos.it/i/Argos/1085873_R_Z001A?w=750&h=440&qlt=70"
-  style="width:1400px;height:600px;">
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="https://www.w3schools.com/w3css/tryw3css_templates_gourmet_catering.htm#home" class="w3-bar-item w3-button">ATN shop</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="ConnectToDB.php" class="w3-bar-item w3-button">View</a>
+      <a href="InsertData.php" class="w3-bar-item w3-button">Insert</a>
+      <a href="UpdateData.php" class="w3-bar-item w3-button">Update</a>
+      <a href="DeleteData.php" class="w3-bar-item w3-button">Delete</a>
+    </div>
   </div>
 </div>
-<script>
-// Automatic Slideshow - change image every 3 seconds
-var myIndex = 0;
-carousel();
 
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}
-  x[myIndex-1].style.display = "block";
-  setTimeout(carousel, 3000);
-}
-</script>
-</body>
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src="image/hamburger.jpg" alt="Hamburger Catering" width="1600" height="800">
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+    <h1 class="w3-xxlarge">ATN toys shop</h1>
+  </div>
+</header>
      
 </html>
