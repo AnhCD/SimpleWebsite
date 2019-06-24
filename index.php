@@ -57,7 +57,7 @@ img {vertical-align: middle;}
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
-    <a href="https://www.w3schools.com/w3css/tryw3css_templates_gourmet_catering.htm#home" class="w3-bar-item w3-button">ATN shop</a>
+    <a href="index.php" class="w3-bar-item w3-button">ATN shop</a>
     <!-- Right-sided navbar links. Hide them on small screens -->
     <div class="w3-right w3-hide-small">
       <a href="ConnectToDB.php" class="w3-bar-item w3-button">View</a>
