@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
     <head>
-<title>Insert data to PostgreSQL with php - creating a simple web application</title>
+<title>Insert data to PostgreSQL</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <style>
 li {
@@ -11,7 +11,7 @@ list-style: none;
 </head>
 <body>
 <h1>INSERT DATA TO DATABASE</h1>
-<h2>Enter data into student table</h2>
+<h2>Enter data into table</h2>
 <ul>
     <form name="InsertData" action="InsertData.php" method="POST" >
 <li>toyID:</li><li><input type="text" name="toyid" /></li>
@@ -44,14 +44,6 @@ if($pdo === false){
      echo "ERROR: Could not connect Database";
 }
 
-//Khởi tạo Prepared Statement
-//$stmt = $pdo->prepare('INSERT INTO student (stuid, fname, email, classname) values (:id, :name, :email, :class)');
-
-//$stmt->bindParam(':id','SV03');
-//$stmt->bindParam(':name','Ho Hong Linh');
-
-//$stmt->execute();
-//$sql = "INSERT INTO student(toyid, toyname) VALUES('SV02', 'robot')";
 $sql = "INSERT INTO toy(toyid, toyname)"
         . " VALUES('$_POST[toyid]','$_POST[toyname]')";
 $stmt = $pdo->prepare($sql);

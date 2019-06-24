@@ -45,8 +45,6 @@ echo '<p>Students information:</p>';
       <tr>
         <th>Toy ID</th>
         <th>Toy Name</th>
-
-
       </tr>
     </thead>
     <tbody>
@@ -55,14 +53,10 @@ echo '<p>Students information:</p>';
          //while($r = mysql_fetch_array($result)){
              foreach ($resultSet as $row) {
       ?>
-   
       <tr>
         <td scope="row"><?php echo $row['toyid'] ?></td>
-        <td><?php echo $row['toyname'] ?></td>
-
-        
+        <td><?php echo $row['toyname'] ?></td>  
       </tr>
-     
       <?php
         }
       ?>
